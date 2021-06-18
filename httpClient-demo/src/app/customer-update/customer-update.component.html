@@ -1,3 +1,24 @@
-<p>
-  customer-update works!
-</p>
+<form [formGroup] = "editCustomerForm">
+  <label>Name</label>
+  <input type="text" fromControlName="name"/>
+ 
+  <label>Email</label>
+  <input type="email" fromControlName="email"/>
+
+  <label>Phone</label>
+  <input type="text" fromControlName="phone"/>
+
+  <label>city</label>
+  <input type="text" fromControlName="city"/>
+
+  <label>country</label>
+  <input type="text" fromControlName="country"/>
+
+  <label>title</label>
+  <input type="text" fromControlName="title"/>
+
+
+  <input type="submit" value = "Submit">
+  </form>
+
+  

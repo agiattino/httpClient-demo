@@ -7,5 +7,6 @@ export class  Customer {
   email: string;
 
   tel: string;
+  subscribe: any;
 
 }

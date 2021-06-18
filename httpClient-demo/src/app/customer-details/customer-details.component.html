@@ -1,9 +1,14 @@
-<div class="justify-content-center align-items-center py-5">
-  <h2 class="border-bottom">{{customer.name}}</h2>
-  <nav>
+  <!-- // customer-details class="component html" -->
+
+<div *ngIf="customer" class="justify-content-center align-items-center py-5">
+   
+    <h2 class="border-bottom">{{customer.name}}</h2>
+    <nav>
+
     <a routerLink="/update/{{id}}">Edit</a>
   </nav>
   <label>Email: {{customer.email}}</label>
+     
   <br />
   <label>Phone number: {{customer.phone}}</label>
   <br />

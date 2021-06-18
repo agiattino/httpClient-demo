@@ -8,7 +8,7 @@ import { CustomerDetailsComponent } from './customer-details/customer-details.co
 import { CustomerCreateComponent } from './customer-create/customer-create.component';
 import { CustomerUpdateComponent } from './customer-update/customer-update.component';
 import {HttpClientModule} from '@angular/common/http';
-import {ReactiveFormsModule} from '@angular/forms';
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -24,6 +24,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     NgbModule.forRoot()
   ],
   providers: [],

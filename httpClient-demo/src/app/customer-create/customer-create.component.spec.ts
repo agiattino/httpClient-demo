@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import {HttpClientModule} from '@angular/common/http';
 import { CustomerCreateComponent } from './customer-create.component';
+import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 
 describe('CustomerCreateComponent', () => {
   let component: CustomerCreateComponent;
@@ -8,7 +9,8 @@ describe('CustomerCreateComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomerCreateComponent ]
+      declarations: [ CustomerCreateComponent ] , 
+      imports: [ReactiveFormsModule, FormsModule , HttpClientModule ]  
     })
     .compileComponents();
   }));
